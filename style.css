@@ -115,6 +115,9 @@ nav a:hover {
     margin-bottom: 30px;
     font-size: 2rem;
 }
+section.imoveis h2 {
+    color: #234c8c;
+}
 
 .imovel-card {
     background-color: #f8f9fa;
