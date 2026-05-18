@@ -5,64 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Minha Alegre Casinha</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-    <!-- Header -->
+
+    <!-- HEADER -->
     <header>
         <nav>
-            <div class="logo">A Minha Alegre Casinha</div>
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+                A Minha Alegre Casinha
+            </div>
+
             <ul>
                 <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#imoveis">Imóveis</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção Principal -->
+    <!-- HERO -->
     <section class="hero" id="inicio">
-        <h1>A Minha Alegre Casinha - Imobiliária</h1>
-        <a href="#imoveis" class="btn">Ver Imóveis</a>
+
+        <div class="hero-content">
+            <h1>Encontre a Casa dos Seus Sonhos</h1>
+
+            <p>
+                Moradias, apartamentos e imóveis de luxo
+                nas melhores zonas de Portugal.
+            </p>
+
+            <a href="#imoveis" class="btn">
+                Ver Imóveis
+            </a>
+        </div>
+
     </section>
 
-    <!-- Imóveis -->
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+
+        <h2>Sobre Nós</h2>
+
+        <p>
+            A Minha Alegre Casinha é uma imobiliária moderna,
+            especializada em ajudar famílias a encontrar o imóvel perfeito.
+        </p>
+
+    </section>
+
+    <!-- IMÓVEIS -->
     <section class="imoveis" id="imoveis">
+
         <h2>Imóveis em Destaque</h2>
-        
-        <div class="imovel-card">
-            <h3>Moradia em Lisboa</h3>
-            <p class="preco">350.000 €</p>
-            <p>4 Quartos | 2 Casas de Banho</p>
-            <p>Jardim privado e garagem</p>
-        </div>
 
-        <div class="imovel-card">
-            <h3>Apartamento no Porto</h3>
-            <p class="preco">185.000 €</p>
-            <p>2 Quartos | 1 Casa de Banho</p>
-            <p>Moderno, perto do centro da cidade</p>
-        </div>
+        <div class="cards">
 
-        <div class="imovel-card">
-            <h3>Moradia em Cascais</h3>
-            <p class="preco">550.000 €</p>
-            <p>5 Quartos | 3 Casas de Banho</p>
-            <p>Luxo junto à praia e piscina</p>
+            <!-- CARD 1 -->
+            <div class="imovel-card">
+
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994"
+                alt="Moradia Lisboa">
+
+                <div class="card-content">
+
+                    <h3>Moradia em Lisboa</h3>
+
+                    <p class="preco">350.000 €</p>
+
+                    <p>
+                        <i class="fa-solid fa-bed"></i> 4 Quartos
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-bath"></i> 2 Casas de Banho
+                    </p>
+
+                    <p>
+                        Jardim privado e garagem
+                    </p>
+
+                    <button class="btn-card">
+                        Saber Mais
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="imovel-card">
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+                alt="Apartamento Porto">
+
+                <div class="card-content">
+
+                    <h3>Apartamento no Porto</h3>
+
+                    <p class="preco">185.000 €</p>
+
+                    <p>
+                        <i class="fa-solid fa-bed"></i> 2 Quartos
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-bath"></i> 1 Casa de Banho
+                    </p>
+
+                    <p>
+                        Moderno e perto do centro
+                    </p>
+
+                    <button class="btn-card">
+                        Saber Mais
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="imovel-card">
+
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
+                alt="Moradia Cascais">
+
+                <div class="card-content">
+
+                    <h3>Moradia em Cascais</h3>
+
+                    <p class="preco">550.000 €</p>
+
+                    <p>
+                        <i class="fa-solid fa-bed"></i> 5 Quartos
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-bath"></i> 3 Casas de Banho
+                    </p>
+
+                    <p>
+                        Luxo junto à praia e piscina
+                    </p>
+
+                    <button class="btn-card">
+                        Saber Mais
+                    </button>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- CONTACTO -->
     <section class="contacto" id="contacto">
-        <h2>Contacto</h2>
-        <p>Tel: +351 219 500 714</p>
-        <p>Email: geral@cronolan.com</p>
-        <p>Localização: Alhandra, Lisboa</p>
+
+        <h2>Entre em Contacto</h2>
+
+        <form>
+
+            <input type="text" placeholder="O seu nome">
+
+            <input type="email" placeholder="O seu email">
+
+            <textarea placeholder="A sua mensagem"></textarea>
+
+            <button type="submit" class="btn">
+                Enviar Mensagem
+            </button>
+
+        </form>
+
+        <div class="info-contacto">
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +351 219 500 714
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                geral@cronolan.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Alhandra, Lisboa
+            </p>
+
+        </div>
+
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
+
         <p>&copy; 2026 Cronolan - Tecnologia, Lda</p>
+
         <p>A Minha Alegre Casinha</p>
+
     </footer>
+
 </body>
 </html>
